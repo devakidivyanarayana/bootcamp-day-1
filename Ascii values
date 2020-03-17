@@ -1,0 +1,17 @@
+package boot;
+// class name is Asciivalues
+public class Asciivalues {
+public static void main (String args[])
+{
+// declaring the variable
+char ch;
+// allocating memory to variable i by using int data type
+int i;
+for (i=97; i<=122; i++)       // using for loop to print the ASCII values
+{
+ch=((char)i);
+System.out.print(ch+ " -> " + i+ "\t");
+}
+}
+}
+
