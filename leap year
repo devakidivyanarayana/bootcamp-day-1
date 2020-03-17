@@ -1,0 +1,35 @@
+// 8. Check if a given year is leap year or not.
+package boot;
+import java. util. Scanner;
+// using java. util. Scanner package to take input from key board
+public class Leap {
+public static void main (String [] args) 
+{
+int year;
+// to accept input from user	
+Scanner scan=new Scanner(System.in);
+System.out.println("Enter any Year:");
+year=scan.nextInt();
+scan.close();
+	 // using boolean data type to say leap year or not (using true or false)
+boolean Leap=false;
+if (year % 4==0)
+ {
+if (year % 100==0)
+ {
+ if (year % 400==0)
+  Leap = true;
+  else
+  Leap = false;
+ }
+ else
+ Leap = true;
+}
+else {
+ Leap = false;
+ }
+if(Leap==true) 	// print it as leap year
+System.out.println(year + “Leap Year.");
+else        	// print as not leap year	            System.out.println(year + " not a Leap Year.");
+	    }
+	}
