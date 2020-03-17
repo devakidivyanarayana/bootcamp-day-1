@@ -1,0 +1,42 @@
+// 5.Create a program to check whether an input alphabet is Consonant or Vowel. If the user inputs a number, print "Wrong data".
+// Code:
+ package boot;
+import java. util. Scanner;
+// using scanner form the java. util package 
+public class Vowel {
+	   	public static void main (String [ ] arg)
+	  	 {
+		// using boolean data type to at true or false
+		   boolean isVowel=false;
+		// to accept the input from key board
+		   Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter a character: ");
+		char ch=scanner. next().charAt(0); 
+		scanner.close();
+		// using switch case to check the alphabets as Consonant or vowels
+		switch(ch)
+		{
+		   case 'a’:
+		   case 'e’:
+		   case 'i’:
+		   case 'o’:
+		   case 'u’:
+			   // checking switch case for also capital letters also 
+		   case 'A’:
+		   case 'E’:
+		   case 'I’:
+		   case 'O’:
+		   case 'U’: isVowel = true;
+		}
+		// using if else to check given character is a vowel or not
+		  if (isVowel == true) {
+		   System.out.println(ch+"input character is a Vowel");
+		}
+		else {
+		   if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+			System.out.println(ch+" input character is a Consonant");
+		   else
+			System.out.println("wrong data");		
+	        }
+	   }
+	}
